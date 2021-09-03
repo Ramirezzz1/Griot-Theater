@@ -1,0 +1,67 @@
+*{border:1px solid red;}
+.grid-line1 {
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.8fr 1.6fr 0.6fr;
+    grid-template-rows: auto 1fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header1 header1 header1"
+      "banner1 banner1 banner1"
+      ". ticket .";
+  }
+
+  img{
+      position:relative;
+      width:100%;
+
+  }
+
+  .screentext{
+      position:absolute;
+      color: whitesmoke;
+      top: 20%;
+      left: 30%
+  }
+
+  #navbarNavAltMarkup{
+      justify-content: right;
+      align-items: flex-end;
+  }
+  .header1 { grid-area: header1;
+}
+  
+  .banner1 { grid-area: banner1; }
+  
+.ticket { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-area: ticket;
+    
+ }
+.ticket1{ 
+    grid-area: ticket1;
+    justify-self: stretch;}
+.ticket2{ grid-area: ticket2;}
+.ticket3{ grid-area: ticket3;}
+.ticket4{ grid-area: ticket4;}
+
+.mainfooter{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas: 
+    "map1 . ."
+    "map1 . ."
+    "map1 . .";
+    grid-area: mainfooter;
+}
+
+.btn btn-warning{
+    justify-content: center;
+    width: 5px;
+}
